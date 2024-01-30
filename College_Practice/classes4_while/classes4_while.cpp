@@ -5,8 +5,8 @@
 using namespace std;
 
 int binarySearch(int target) {
-    int low = 1;  // Минимальное значение
-    int high = 10; // Максимальное значение
+    int low = 1;  // min
+    int high = 10; // max
 
     int count = 0;
 
@@ -14,13 +14,13 @@ int binarySearch(int target) {
         int mid = (low + high) / 2;
 
         if (mid == target) {
-            return mid;  // Число найдено, возвращаем его
+            return mid;  // find
         }
         else if (mid > target) {
-            high = mid - 1;  // Цель меньше, уменьшаем верхнюю границу
+            high = mid - 1;  // target is lower
         }
         else {
-            low = mid + 1;   // Цель больше, увеличиваем нижнюю границу
+            low = mid + 1;   // target is greater
         }
 
         count++;
@@ -128,19 +128,19 @@ int myMain() {
 
     // Task 2
     int triangleHeight;
-    cout << "Enter the height of the triangle: ";
+    cout << "Enter height of triangle: ";
     cin >> triangleHeight;
     drawTriangle(triangleHeight);
 
     // Task 3
     int num;
-    cout << "Enter a number to check if it's Fibonacci: ";
+    cout << "Enter number to check Fibonacci: ";
     cin >> num;
     int result = isFibonacci(num);
     if (result != -1)
-        cout << num << " is the " << result << "th Fibonacci number." << endl;
+        cout << num << " : " << result << " is Fibonacci number." << endl;
     else
-        cout << num << " is not a Fibonacci number." << endl;
+        cout << num << "not Fibonacci number" << endl;
 
     return 0;
 }
@@ -166,5 +166,5 @@ void testSpace() {
 
 int main() 
 {
-    binaryMain();
+    myMain();
 }

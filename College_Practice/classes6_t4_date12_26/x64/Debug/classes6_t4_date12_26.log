@@ -1,0 +1,4 @@
+﻿  classes6_t4_date12_26.cpp
+D:\Programming\C_pp\College_Practice\classes6_t4_date12_26\classes6_t4_date12_26.cpp(31,24): warning C4244: 'return': conversion from '__int64' to 'int', possible loss of data
+D:\Programming\C_pp\College_Practice\classes6_t4_date12_26\classes6_t4_date12_26.cpp(41,33): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  classes6_t4_date12_26.vcxproj -> D:\Programming\C_pp\College_Practice\classes6_t4_date12_26\x64\Debug\classes6_t4_date12_26.exe
