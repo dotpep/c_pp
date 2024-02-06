@@ -1,9 +1,4 @@
 #include <iostream>
-
-using namespace std;
-
-
-#include <iostream>
 #include <string>
 #include <functional> // std::hash
 
@@ -42,62 +37,33 @@ int main() {
 
     string password = handleUserPassword();
 
+    cout << "---\n";
+
     int hashed_password = hashPassword(password);
 
     int saved_hash = saveHashPassword(hashed_password);
 
     printHashPassword(password, saved_hash);
 
-    string reentered_password = handleUserPassword();
+    cout << "---\n";
 
-    if (checkPassword(reentered_password, saved_hash)) {
-        cout << "Access logined. Password is correct.\n\n";
-    }
-    else {
-        cout << "Access denied. Password is incorrect.\n\n";
-    }
+    cout << "Enter valid password to login account!\n";
+
+    bool isLogined = false;
+
+    do {
+        string reentered_password = handleUserPassword();
+
+        cout << "---\n";
+
+        if (checkPassword(reentered_password, saved_hash)) {
+            cout << "Access logged in. Password is correct.\n\n";
+            isLogined = true;
+        }
+        else {
+            cout << "Access denied. Password is incorrect. Please try again.\n\n";
+            cout << "---\n";
+            isLogined = false;
+        }
+    } while (!isLogined);
 }
-
-
-
-//int hashPassword(string password) {
-//    
-//    //
-//
-//    return 0;
-//}
-//
-//
-//void PrinttHashPassword(string original_password, int saved_hash) {
-//    cout << "original password: " << original_password << endl;
-//    cout << "hash of password: " << saved_hash << endl;
-//}
-//
-//int saveHashPassword(int hased_password) {
-//    int save_hash_password;
-//
-//    //
-//
-//    return save_hash_password;
-//}
-//
-//string handleUserPassword() {
-//    string password;
-//    cout << "password: ";
-//    cin >> password;
-//    return password;
-//}
-//
-//
-//int main()
-//{
-//    cout << "I am hash your password, please enter it in below!\n";
-//
-//    string password = handleUserPassword();
-//
-//    int hashed_password = hashPassword(password);
-//
-//    int saved_hash = saveHashPassword(hashed_password);
-//
-//    PrinttHashPassword(password, saved_hash);
-//}
