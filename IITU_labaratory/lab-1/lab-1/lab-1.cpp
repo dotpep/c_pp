@@ -329,6 +329,7 @@ void task13() {
 void task14() {
     //int fourDigiutNum = 2002; // result: 1
     //int N = fourDigiutNum;
+    
 
     int N;
     cout << "enter four digit number: ";
@@ -406,5 +407,5 @@ void task15() {
 
 int main()
 {
-    task15();
+    task11();
 }

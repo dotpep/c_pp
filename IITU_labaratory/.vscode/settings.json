@@ -1,0 +1,18 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "xstring": "cpp",
+        "xlocale": "cpp",
+        "ostream": "cpp",
+        "concepts": "cpp",
+        "memory": "cpp",
+        "xmemory": "cpp",
+        "xutility": "cpp",
+        "system_error": "cpp",
+        "type_traits": "cpp",
+        "xlocmon": "cpp",
+        "xtr1common": "cpp",
+        "cstdlib": "cpp",
+        "utility": "cpp"
+    }
+}
