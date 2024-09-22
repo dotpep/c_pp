@@ -203,12 +203,14 @@ void task6() {
 }
 
 void task7() {
-    int month, year, days;
+    int month, year, days, day;
 
     cout << "input month: ";
     cin >> month;
     cout << "input year: ";
     cin >> year;
+    cout << "input day: ";
+    cin >> day;
 
     cout << "your input: month " << month << " of " << year << " year" << endl;
 
@@ -240,6 +242,7 @@ void task7() {
             break;
     }
 
+    cout << month << "." << day << "." << year << endl ;
     cout << "number of days: " << days << endl;
 }
 
@@ -611,5 +614,5 @@ void task18() {
 
 int main()
 {
-    task18();
+    task15();
 }
