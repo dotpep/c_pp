@@ -367,7 +367,6 @@ void task15(){
         }
     }
 
-    // solution:
     vector<int> localMaxIndices;
 
     // local maxima
@@ -383,7 +382,8 @@ void task15(){
     }
 
     // min distance between local maxima
-    int minDistance = numeric_limits<int>::max();
+    int minDistance = 0;
+    minDistance = numeric_limits<int>::max();
 
     for (int i = 0; i < localMaxIndices.size(); ++i) {
         for (int j = i + 1; j < localMaxIndices.size(); ++j) {
