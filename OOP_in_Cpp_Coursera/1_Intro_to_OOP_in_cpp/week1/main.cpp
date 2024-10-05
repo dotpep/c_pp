@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void printInfo() {
+void printMenu() {
     // 1. print help
     cout << "1: Print help" << endl;
     // 2. print exchange stats
@@ -57,7 +57,7 @@ void optionInfo(int userOption){
     }
 }
 
-void optionInfoSwitch(int userOption){
+void proccessUserInput(int userOption){
     switch (userOption)
     {
     case 1:
@@ -108,28 +108,28 @@ void test1(){
 
 
 
-         Validation
-        if (!(int)userOption)
-        {
-            cout << "============" << endl;
-            cout << "String or Incorrect type of data was given!" << endl;
-            userOption = 0;
-            break;
-        }
+        // Validation
+        //if (!(int)userOption)
+        //{
+        //    cout << "============" << endl;
+        //    cout << "String or Incorrect type of data was given!" << endl;
+        //    userOption = 0;
+        //    break;
+        //}
 
-        if(!cin) {
-            cout << "============" << endl;
-            cout << "cin standard method was corrupted!" << endl;
-            userOption = 0;
-            break;
-        }
+        //if(!cin) {
+        //    cout << "============" << endl;
+        //    cout << "cin standard method was corrupted!" << endl;
+        //    userOption = 0;
+        //    break;
+        //}
 
-        if (INT_MIN <= userOption && userOption <= INT_MAX)
-        {
-            cout << "============" << endl;
-            cout << "Num is out of integer range! it is too big or small." << endl;
-            break;
-        }
+        //if (INT_MIN <= userOption && userOption <= INT_MAX)
+        //{
+        //    cout << "============" << endl;
+        //    cout << "Num is out of integer range! it is too big or small." << endl;
+        //    break;
+        //}
         
 }
 //bool isValidUserInput(int userOption){ }
@@ -139,7 +139,7 @@ int main(){
 
     while (true)
     {
-        printInfo();
+        printMenu();
 
         cout << ": ";
         cin >> userOption;
@@ -159,5 +159,5 @@ int main(){
 
     cout << "============" << endl;
     cout << "You choose: " << userOption << endl;
-    optionInfoSwitch(userOption);
+    proccessUserInput(userOption);
 }
