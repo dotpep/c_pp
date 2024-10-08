@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void printMenu() {
+void printMenuInfo() {
     // 1. print help
     cout << "1: Print help" << endl;
     // 2. print exchange stats
@@ -57,7 +57,7 @@ void optionInfo(int userOption){
     }
 }
 
-void proccessUserInput(int userOption){
+void handleUserOptionInput(int userOption){
     switch (userOption)
     {
     case 1:
@@ -139,7 +139,7 @@ int main(){
 
     while (true)
     {
-        printMenu();
+        printMenuInfo();
 
         cout << ": ";
         cin >> userOption;
@@ -159,5 +159,5 @@ int main(){
 
     cout << "============" << endl;
     cout << "You choose: " << userOption << endl;
-    proccessUserInput(userOption);
+    handleUserOptionInput(userOption);
 }
